@@ -13,8 +13,8 @@ target 'HelloDoric' do
   use_modular_headers!
 
   # Pods for HelloDoric
-  pod 'DoricCore', "#{version}"
-  pod 'DoricDevkit', "#{version}"
+  pod 'DoricCore', :path => '../../doric/'
+  pod 'DoricDevkit', :path => '../../doric/'
   
   pod 'SDWebImage'
 

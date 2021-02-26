@@ -1,2 +1,6 @@
 include ':app'
-rootProject.name='HelloDoric'
+include ':doric'
+include ':devkit'
+rootProject.name = 'HelloDoric'
+project(':doric').projectDir = new File('../../doric/doric-android/doric')
+project(':devkit').projectDir = new File('../../doric/doric-android/devkit')
